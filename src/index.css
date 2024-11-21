@@ -1,13 +1,104 @@
-body {
+/* Global */
+*{
+  padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  box-sizing: border-box;
+  color: var(--SecondryColor);
 }
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+:root{
+  --PrimaryColor:#333;
+  --SecondryColor: rgb(255, 230, 0);
+}
+body{
+  background-color: var(--PrimaryColor);
+}
+/* SignUp Props */
+.Contain-Form{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: calc(100vh - 60px);
+  width: 100%;
+}
+.Form-SignUp{
+  display: flex;
+  align-items: flex-end;
+  gap: 40px;
+  flex-direction: column;
+}
+.Input-Item{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.Input-Item label{
+  font-size: 26px;
+  color: var(--SecondryColor);
+  letter-spacing: 2px;
+}
+.Input-Item label::after{content: ":";}
+.Input-Item input{
+  appearance: none;
+  background-color: transparent;
+  outline: none;
+  box-shadow: none;
+  border: none;
+  border-bottom: 2px solid var(--SecondryColor);
+  padding: 5px 12px;
+  font-size: 26px;
+  color: white;
+  letter-spacing: 2px;
+}
+.Buttons-Form{
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  gap: 30px;
+}
+.Buttons-Form button{
+  color: var(--SecondryColor);
+  background-color: transparent;
+  box-shadow: none;
+  border: solid var(--SecondryColor) 2px;
+  cursor: pointer;
+  padding: 10px 30px;
+  font-size: 20px;
+}
+/* Header Props */
+.Header{
+  width: 100%;
+  height: 60px;
+  box-shadow: 5px 0 0 5px #333,
+              5px 0 0 7px var(--SecondryColor);
+}
+.Header .Container{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.Header .Container .Link-Pages{
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+}
+.Header .Container .Link-Pages li{
+  color: var(--SecondryColor);
+  font: 600 20px "";
+  cursor: pointer;
+}
+.Header .Btns-Reg-Sign{
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+}
+.Btn-Link{
+  padding: 5px 10px;
+  border: 2px solid var(--SecondryColor);
+  font-size: 22px;
+  text-decoration: none;
+  border-radius: 5px;
+  letter-spacing: 1px;
 }

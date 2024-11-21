@@ -1,0 +1,56 @@
+/* Top Bar Props */
+.Top-Bar-Navigation-Container{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding-block: 40px;
+}
+.Top-Bar-Navigation-Container h1{
+  font: 600 40px Verdana;
+}
+/* Side Bar Props */
+.Side-Bar-Container{
+  bottom: 0;
+  width: 300px;
+  margin-top: 8px;
+  height: calc(100vh - 60px);
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+  padding-block: 40px;
+  border-right: 3px solid var(--SecondryColor);
+}
+.Link-to-Page{
+  text-decoration: none;
+  font: 600 20px Verdana;
+}
+.Link-to-Page:hover{
+  border-bottom: 2px solid var(--SecondryColor);
+}
+.ContainSideBarView{
+  display: flex;
+  flex-direction: row;
+}
+.ContainUsersTable{
+  padding: 40px 60px;
+  width:100% ;
+}
+.ContainUsersTable table{
+  width: 100%;
+  height: auto;
+  text-align: center;
+  font: 600 22px "";
+}
+.ContainUsersTable table thead{
+  background-color: rgb(32, 54, 63);
+}
+.ContainUsersTable table tbody tr{
+  height: 10vw;
+  background-color: rgb(32, 63, 35);
+}
+.ContainUsersTable table tbody tr td:last-child span{
+  cursor: pointer;
+}
+
